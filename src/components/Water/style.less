@@ -1,0 +1,136 @@
+.cricle-border {
+  border-radius: 40px;
+  padding: 5px 30px 5px 10px;
+  margin-top: 10px;
+}
+.rectangle-border {
+  padding: 10px 30px;
+  .rate-lable {
+    font-size: 24px;
+  }
+  .rate {
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 56px;
+  }
+  .rate-level {
+    font-size: 18px;
+  }
+}
+
+.rectangle-border.high .rate {
+  color: #9fd810;
+}
+.rectangle-border.middle .rate {
+  color: #faad14;
+}
+.rectangle-border.low .rate {
+  color: #ef5350;
+}
+
+.high {
+  border: 2px solid rgba(159, 216, 16, 0.3);
+  .cricle-color {
+    background: rgba(159, 216, 16, 0.2);
+  }
+  .water-color {
+    background: #9fd810;
+  }
+  .water:before {
+    background: #ECF7CF;
+    top: -10px;
+  }
+
+  .water:before {
+    background: #ECF7CF;
+    top: -10px;
+  }
+}
+.middle {
+  border: 2px solid rgba(250, 173, 20, 0.3);
+  .cricle-color {
+    background: rgba(250, 173, 20, 0.2);
+  }
+  .water-color {
+    background: #faad14;
+  }
+  .water:before {
+    background: #FEEED0;
+    top: 0px;
+  }
+
+  .water:before {
+    background: #FEEED0;
+    top: 0px;
+  }
+}
+.low {
+  border: 2px solid rgba(239, 83, 80, 0.3);
+  .cricle-color {
+    background: rgba(239, 83, 80, 0.2);
+  }
+  .water-color {
+    background: #ef5350;
+  }
+  .water:before {
+    background: #FCDDDC;
+    top: 10px;
+  }
+
+  .water:before {
+    background: #FCDDDC;
+    top: 10px;
+  }
+}
+
+.left-cricle {
+  position: relative;
+  img {
+    z-index: 30;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .cricle {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+  .water {
+    height: 64px;
+    width: 64px;
+    position: absolute;
+    z-index: 20;
+    border-radius: 50%;
+    overflow: hidden;
+    top: 0;
+  }
+
+  .water:before,
+  .water:after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+  }
+  .water:before {
+    border-radius: 45%;
+    animation: animate 5s linear infinite;
+  }
+
+  .water:after {
+    border-radius: 40%;
+    animation: animate 5s linear infinite;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: translate(-50%, -75%) rotate(100deg);
+    }
+    100% {
+      transform: translate(-50%, -75%) rotate(360deg);
+    }
+  }
+}

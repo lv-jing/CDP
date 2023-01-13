@@ -1,0 +1,71 @@
+@import "../../../../style/theme.less";
+
+#profile {
+  .container {
+    background-color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    .avatar {
+      p {
+        font-size: 20px;
+        font-weight: 600;
+        color: #333333;
+        margin-top: 20px;
+      }
+    }
+    .ant-avatar {
+      border: 2px solid @primary-color;
+    }
+    .vip {
+      position: relative;
+      border-radius: 4px;
+      border: 1px solid @primary-color;
+      margin: 20px 60px 30px 30px;
+      .icon {
+        background: linear-gradient(135deg, #e0b872 0%, #c6a263 100%);
+      }
+      .vip-level {
+        text-align: center;
+        padding-top: 4px;
+        color: #c6a263;
+      }
+    }
+    .info {
+      padding: 0 30px 20px;
+      .ant-row {
+        margin-top: 20px;
+        .word {
+          text-align: left;
+          .profile-lable {
+            margin: 0px 10px;
+          }
+        }
+      }
+    }
+
+    .du {
+      padding: 0 30px 15px;
+      .rata-panel {
+        text-align: left;
+        margin-left: 20px;
+        .rate-lable {
+          font-weight: 600;
+          color: #333333;
+          font-size: 16px;
+        }
+        .rate {
+          font-weight: 700;
+          color: #333333;
+          font-size: 18px;
+        }
+      }
+
+      .rate-level {
+        color: #666666;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 5px;
+      }
+    }
+  }
+}

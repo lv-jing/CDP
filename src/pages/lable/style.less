@@ -1,0 +1,143 @@
+@import "../../style/theme.less";
+
+#label {
+  .header {
+    margin: 0 20px;
+  }
+  .ant-tree .ant-tree-treenode {
+    padding: 0 0 10px 0;
+  }
+  .label-header {
+    border-bottom: none;
+    background: #f4ece0;
+  }
+  .lable-card {
+    cursor: pointer;
+    height: 130px;
+    border-radius: 8px;
+    opacity: 0.8;
+    border: 2px solid #c6a2634d;
+    box-shadow: 0px 4px 12px 0px rgba(198, 162, 99, 0.2);
+    display: flex;
+    padding: 0 53px;
+    justify-content: center;
+    align-items: center;
+    .card-img {
+      width: 80px;
+      height: 80px;
+    }
+    .card-title {
+      font-size: 16px;
+      font-weight: 500;
+      color: #666666;
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+    .card-text {
+      font-size: 16px;
+      font-weight: 400;
+      color: #c6a263;
+      line-height: 26px;
+    }
+  }
+  .active-show {
+    border: 2px solid #c6a263;
+  }
+  .ant-radio-button-wrapper {
+    span {
+      color: #999999 !important;
+    }
+  }
+  .ant-radio-button-wrapper-checked {
+    span {
+      color: #fff !important;
+    }
+  }
+  .create-but {
+    width: 168px;
+    height: 40px;
+    border-radius: 2px;
+  }
+  .lable-detail {
+    .lable-detail-card {
+      border-radius: 8px;
+      display: flex;
+      padding: 0 30px 0 90px;
+      justify-content: space-between;
+      align-items: center;
+      background: url("../../assets/images/bj.png") no-repeat;
+      height: 170px;
+      .card-detail-img {
+        width: 169px;
+        height: 169px;
+      }
+      .card-title {
+        font-size: 20px;
+        color: #451e0e;
+        margin-bottom: 10px;
+      }
+      .card-text {
+        font-size: 40px;
+        font-weight: 500;
+        color: #451e0e;
+      }
+    }
+  }
+
+  .label-btn {
+    border: 1px solid @primary-color;
+    color: @primary-color;
+    border-radius: 40px;
+    padding: 5px 20px 5px 20px;
+    text-align: left;
+    cursor: pointer;
+    min-height: 35px;
+  }
+  .label-btn.active {
+    border: 1px solid dodgerblue;
+    color: dodgerblue;
+    .anticon {
+      color: dodgerblue;
+    }
+  }
+  .add-label-btn {
+    border: 1px dashed #d9d9d9;
+    color: #d9d9d9;
+    border-radius: 40px;
+    padding: 5px 20px 5px 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .user-rule {
+    border: 1px solid #efefef;
+    .rule-header {
+      background: #f4ece0;
+      padding: 10px 20px 20px;
+    }
+    .rule-body {
+      padding: 20px;
+    }
+  }
+  .condition {
+    padding: 10px;
+    border: 1px solid @primary-color;
+    width: 35px;
+    text-align: center;
+    color: @primary-color;
+    cursor: pointer;
+    height: 39px;
+    line-height: 20px;
+  }
+
+  .condition.active {
+    background: @primary-color;
+    color: #fff;
+  }
+
+  .name-link {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    color: dodgerblue;
+  }
+}

@@ -1,0 +1,174 @@
+@import "../../../../style/theme.less";
+
+#lable {
+  .title {
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  .type {
+    .ant-tabs-nav {
+      background: #fff;
+      padding: 0;
+      margin-bottom: 0px;
+    }
+    .ant-tabs-tab-btn {
+      color: #000000;
+      margin: 0;
+    }
+    .ant-tabs-ink-bar {
+      background: #000000;
+      width: 50px !important;
+      margin-left: 40px;
+    }
+  }
+
+  .channel {
+    .ctab-list {
+      border-radius: 4px;
+      border: 1px solid #c6a263;
+      .ctab {
+        text-align: center;
+        padding: 4px;
+        cursor: pointer;
+        span {
+          color: #999999;
+        }
+      }
+      .ctab.active {
+        background: @primary-color;
+        span {
+          color: #fff !important;
+        }
+      }
+    }
+    .chart-item {
+      margin-top: 40px;
+      width: 350px;
+      height: 320px;
+    }
+    img {
+      margin-top: 50px;
+      width: 300px;
+    }
+  }
+
+  .price {
+    .high-temp {
+      .tem-color {
+        background: rgba(159, 216, 16, 0.2);
+      }
+      .tem-water-color {
+        background: #9FD810;
+      }
+      .thermometer-water:before {
+        background: #ECF7CF;
+        top: -100px;
+      }
+    
+      .thermometer-water:before {
+        background: #ECF7CF;
+        top: -100px;
+      }
+    }
+    .middle-temp {
+      .tem-color {
+        background: rgba(250, 173, 20, 0.2);
+      }
+      .tem-water-color {
+        background: #FAAD14 ;
+      }
+      .thermometer-water:before {
+        background: #FEEFD0;
+        top: -50px;
+      }
+    
+      .thermometer-water:before {
+        background: #FEEFD0;
+        top: -50px;
+      }
+    }
+    .low-temp {
+      .tem-color {
+        background: rgba(239, 83, 80, 0.2);
+      }
+      .tem-water-color {
+        background: #ef5350;
+      }
+      .thermometer-water:before {
+        background: #FDEDED;
+        top: 30px;
+      }
+    
+      .thermometer-water:before {
+        background: #FDEDED;
+        top: 30px;
+      }
+    }
+    .thermometer-panel {
+      border-radius: 8px;
+      margin: 0 24px;
+      position: relative;
+      .tem-color{
+        height: 350px;
+        width: 150px;
+      }
+      .price-du {
+        font-weight: 600;
+        color: #451E0E;
+        position: absolute;
+        top: 20px;
+        z-index: 30;
+        right: 25px;
+      }
+
+      .kedu {
+        position: absolute;
+        right: 2%;
+        z-index: 30;
+        color: #451E0E;
+        font-size: 14px;
+      }
+
+      .thermometer-water {
+        height: 350px;
+        width: 150px;
+        position: absolute;
+        z-index: 20;
+        overflow: hidden;
+        bottom: 0;
+      }
+  
+      .thermometer-water:before,
+      .thermometer-water:after {
+        content: "";
+        position: absolute;
+        width: 550%;
+        height: 230%;
+        left: 50%;
+        transform: translate(-50%, -75%);
+      }
+  
+      .thermometer-water:before {
+        border-radius: 46%;
+        animation: animate 5s linear infinite;
+      }
+    
+      .thermometer-water:after {
+        border-radius: 50%;
+        animation: animate 5s linear infinite;
+      }
+    }
+
+  
+  
+    @keyframes animate {
+      0% {
+        transform: translate(-50%, -75%) rotate(100deg);
+      }
+      100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+      }
+    }
+  }
+}

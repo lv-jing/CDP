@@ -1,0 +1,71 @@
+{
+  "name": "pox-front",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^6.1.2",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "ahooks": "^2.10.2",
+    "antd": "^4.15.3",
+    "antd-theme-generator": "^1.2.8",
+    "axios": "^0.21.1",
+    "bizcharts": "^4.1.10",
+    "craco-less": "^1.17.1",
+    "echarts": "^5.2.1",
+    "google-map-react": "^2.1.10",
+    "lodash": "^4.17.21",
+    "mathjs": "^9.4.4",
+    "moment": "^2.29.1",
+    "parallax-js": "^3.1.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dnd": "^14.0.2",
+    "react-dnd-html5-backend": "^14.0.0",
+    "react-dom": "^17.0.2",
+    "react-intl-universal": "^2.4.5",
+    "react-router-config": "^5.1.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-virtualized": "^9.22.3",
+    "uuid": "^8.3.2",
+    "wangeditor": "^4.6.17",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "set PORT=8080 && node color.js && craco start",
+    "build": "node color.js && craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject",
+    "lint": "eslint \"src/**/*.+(js|jsx)\"",
+    "lint:fix": "eslint --fix \"src/**/*.{js,jsx,json,md}\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/eslint-parser": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
+    "eslint": "^7.28.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "simple-progress-webpack-plugin": "^2.0.0"
+  },
+  "proxy": "http://121.36.199.41:9089"
+}
