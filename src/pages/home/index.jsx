@@ -39,6 +39,7 @@ const Home = () => {
     }, [monthDate])
 
     const getHome = (statisticsMonth) => {
+        console.log(1);
         // 36意思是取3种不同的数据各12条
         Promise.all([getHomeData({ statisticsMonth }), getTrendData({ pageNum: 1, pageSize: 36, statisticsMonth })]).then((res) => {
             if (res[0].code === Const.SUCCESS_CODE) {
